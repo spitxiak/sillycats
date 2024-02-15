@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <title>spitxy fun</title>
+  <meta name="description" content="are you a hacker man that you see this.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="spit.lol">
+  <meta property="og:description" content="website about silly cats :3">
+  <meta property="og:image" content="https://i1.sndcdn.com/artworks-zyYqA8D0BdfuyH28-WeeHrw-t500x500.jpg">
+  <meta name="twitter:title" content="spit.lol">
+  <meta name="twitter:description" content="website about silly cats :3">
+  <meta name="twitter:image" content="https://i1.sndcdn.com/artworks-zyYqA8D0BdfuyH28-WeeHrw-t500x500.jpg">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <h1>random silly cat :3</h1>
+  <img id="randomImage" src="" alt="Random Image">
+  <h1 id="therandomtext"></h1>
+
+  <script>
+    var urls = [
+      "https://steamuserimages-a.akamaihd.net/ugc/2074509887587699351/66FF7973966B2F1FEA01A780C4D90586EA80A115/",
+      "https://steamuserimages-a.akamaihd.net/ugc/2074509887587734780/5BE7A6A4FCD0CA3B16CEBC7C738C307033CCEA8C/",
+      "https://steamuserimages-a.akamaihd.net/ugc/2074509887587752158/E4334968075C61C2176C526C7AAA6F4F104B162B/",
+      "https://steamuserimages-a.akamaihd.net/ugc/2074509887587681804/A22F2A4CFF67663C1FD92451D417C2A5A9F15878/",
+      "https://media.tenor.com/t3dLLNaI50oAAAAM/cat-cats.gif",
+      "https://steamuserimages-a.akamaihd.net/ugc/2032857834657974579/3690E3F9328996907AE249A872CCE8F8E54D35B8/",
+      "https://steamuserimages-a.akamaihd.net/ugc/2217520759669724468/D9342B1E565A53C6B1D344497A35AC8B1E6445E4/",
+      "https://i.ytimg.com/vi/mifHo9fC5QI/hqdefault.jpg",
+      "https://tr.rbxcdn.com/67bf19b367672972b7b99ee459c5c58f/420/420/Hat/Png",
+      "https://static.wikia.nocookie.net/silly-cat/images/9/95/Billy.png/revision/latest?cb=20231010114915",
+      "https://i1.sndcdn.com/artworks-zyYqA8D0BdfuyH28-WeeHrw-t500x500.jpg",
+    ];
+    var randomIndex = Math.floor(Math.random() * urls.length);
+    var imageElement = document.getElementById("randomImage");
+    imageElement.src = urls[randomIndex];
+    var theText = document.getElementById("therandomtext");
+    var displayedText = urls[randomIndex].split(" ").slice(0, 10).join(" ");
+    theText.innerHTML = "source: <a href='" + urls[randomIndex] + "'>" + displayedText + "...</a>";
+  </script>
+</body>
+</html>
